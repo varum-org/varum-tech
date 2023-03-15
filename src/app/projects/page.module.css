@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 8px;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.sectionItem {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FFF;
+    height: fit-content;
+}

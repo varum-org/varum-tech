@@ -77,7 +77,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 0;
 }
 
 .center::before {
@@ -104,12 +104,17 @@
   transform: translateZ(0);
 }
 
+.varum {
+  font-weight: 700;
+  color: #000;
+}
+
 .logo,
-.thirteen {
+.tech {
   position: relative;
 }
 
-.thirteen {
+.tech {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,25 +126,26 @@
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
+  font-weight: 700;
+  font-family: var(--font-mono);
 }
 
-.thirteen::before,
-.thirteen::after {
+.tech::before,
+.tech::after {
   content: '';
   position: absolute;
   z-index: -1;
 }
 
 /* Conic Gradient Animation */
-.thirteen::before {
+.tech::before {
   animation: 6s rotate linear infinite;
   width: 200%;
   height: 200%;
-  background: var(--tile-border);
 }
 
 /* Inner Square */
-.thirteen::after {
+.tech::after {
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
@@ -149,6 +155,16 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+}
+
+.iconContainer {
+  gap: 16px;
+  display: flex;
+  position: relative;
+}
+.socialIcon {
+  /* margin-right: 16px; */
+  cursor: pointer;
 }
 
 /* Enable hover only on non-touch devices */
@@ -164,7 +180,7 @@
 }
 
 @media (prefers-reduced-motion) {
-  .thirteen::before {
+  .tech::before {
     animation: none;
   }
 
@@ -251,12 +267,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .varumLogo {
     filter: invert(1);
   }
 
   .logo,
-  .thirteen img {
+  .tech img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
