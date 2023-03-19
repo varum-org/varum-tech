@@ -100,9 +100,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Ngontumathuat <span>-&gt;</span>
+            Community <span>-&gt;</span>
           </h2>
-          <p className={inter.className}>Blog, news and forum</p>
+          <p className={inter.className}>Blog, news and community</p>
         </a>
 
         <a

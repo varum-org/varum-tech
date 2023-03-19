@@ -158,9 +158,10 @@
 }
 
 .iconContainer {
-  gap: 16px;
+  gap: 24px;
   display: flex;
   position: relative;
+  margin-bottom: 32px;
 }
 .socialIcon {
   /* margin-right: 16px; */
